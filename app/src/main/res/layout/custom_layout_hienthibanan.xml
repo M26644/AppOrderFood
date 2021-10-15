@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+    >
+    <TextView
+        android:id="@+id/txtTenBanAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size24dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/imgBanAn"
+        android:layout_width="@dimen/size170dp"
+        android:layout_height="@dimen/size170dp"
+        android:layout_below="@+id/txtTenBanAn"
+        android:layout_marginTop="0dp"
+        android:layout_margin="@dimen/size40dp"
+        android:src="@drawable/banan"></ImageView>
+
+    <ImageView
+        android:id="@+id/imgGoiMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/goimon"
+        android:layout_below="@id/imgBanAn"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:visibility="invisible"
+        ></ImageView>
+
+    <ImageView
+        android:id="@+id/imgThanhToan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thanhtoan"
+        android:layout_below="@id/imgBanAn"
+        android:layout_toRightOf="@id/imgGoiMon"
+        android:layout_marginLeft="@dimen/size5dp"
+        android:visibility="invisible"
+
+        ></ImageView>
+
+    <ImageView
+        android:id="@+id/imgAnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size5dp"
+        android:layout_below="@id/imgBanAn"
+        android:layout_toRightOf="@id/imgThanhToan"
+        android:src="@drawable/anbutton"
+        android:visibility="invisible"
+
+        ></ImageView>
+
+
+</RelativeLayout>

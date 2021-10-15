@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".DangKyActivity"
+        android:background="@color/design_default_color_primary">
+    <TextView
+
+        android:id="@+id/txtTieuDeDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dangki"
+        android:textSize="40dp"
+        android:layout_above="@+id/lnKhungDangKi"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/size10dp"
+        android:layout_margin="@dimen/size10dp"
+        android:textStyle="bold"
+       />
+
+    <LinearLayout
+        android:id="@+id/lnKhungDangKi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edTenDangNhapDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/baseline_account_circle_black_18"
+            android:hint="@string/username"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/edMatKhauDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/baseline_lock_black_12"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:padding="@dimen/size10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            tools:ignore="Deprecated" />
+
+        <RadioGroup
+            android:id="@+id/rgGioiTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdNam"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Nam"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/rdNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nu"></RadioButton>
+        </RadioGroup>
+        <Spinner
+            android:id="@+id/spinQuyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+
+        <EditText
+            android:id="@+id/edNgaySinhDK"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/calender"
+            android:drawablePadding="10dp"
+            android:hint="@string/ngaysinh"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            tools:ignore="Deprecated" />
+
+
+        <EditText
+            android:id="@+id/edCMNDDK"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/idcard"
+            android:drawablePadding="10dp"
+            android:hint="@string/cmnd"
+            android:numeric="integer"
+            android:padding="@dimen/size10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            tools:ignore="Deprecated"
+            android:maxLength="8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDongYDK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:padding="@dimen/size10dp"
+                android:text="@string/dongy"></Button>
+
+            <Button
+                android:id="@+id/btnThoatDK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_weight="1"
+                android:background="@color/orange"
+                android:padding="@dimen/size10dp"
+                android:text="@string/thoat"></Button>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgHinhNhanVien"
+        android:layout_width="@dimen/size76dp"
+        android:layout_height="@dimen/size76dp"
+        android:src="@drawable/nhanvien"
+        android:layout_margin="@dimen/size10dp"></ImageView>
+
+    <TextView
+        android:id="@+id/txtTenNhanVien"
+        android:layout_toRightOf="@id/imgHinhNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tennhanvien"
+        android:layout_marginTop="@dimen/size10dp"
+        android:textSize="@dimen/size18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"></TextView>
+
+    <TextView
+        android:id="@+id/txtCMND"
+        android:layout_toRightOf="@id/imgHinhNhanVien"
+        android:layout_below="@id/txtTenNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size18sp"
+        android:text="0949426143"
+        android:textColor="@color/black"
+
+        ></TextView>
+
+</RelativeLayout>
